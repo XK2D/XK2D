@@ -1,4 +1,4 @@
-## Hi there 👋
+## 個人網站
 
 <!--
 **XK2D/XK2D** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
