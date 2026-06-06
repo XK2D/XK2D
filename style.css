@@ -1,11 +1,52 @@
-*{
+@font-face {
+    font-family: 'Cubic_11';
+    src: url('Cubic_11.ttf') format('truetype'); /* 載入字體 */
+}
+* {
     margin: 0;
     padding: 0;
 }
-body{
-    background-image: url(images/back_images.png);
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(images/back_images.png); /* 背景變暗 */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     min-height: 100vh;
+    font-family: 'Press Start 2P','Cubic_11', sans-serif; /* 字體 */
+}
+
+.d1v {
+    position: absolute;
+    height: 100px;/* 高 */
+    width: 1500px;/* 寬 */
+    display: flex;
+    justify-content: center;/* 文字置中 */
+    align-items: center;/* 文字置中 */
+    left: 50%;/* 置中 */
+    transform: translate(-50%,-100%);/* 調位置 */
+    top: 50%;/* 往下 */    
+    font-size: 250%;/* 字大小 */
+}
+.d1v_world{
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5); /* 加亮亮 */
+    letter-spacing: 4px;/* 字距 */
+}
+.d2v{
+    position: absolute;
+    height: 100px;/* 高 */
+    width: 1000px;/* 寬 */
+    display: flex;
+    justify-content: center;/* 文字置中 */
+    align-items: center;/* 文字置中 */
+    left: 50%;/* 置中 */
+    transform: translate(-50%,-20%);/* 調位置 */
+    top: 50%;/* 往下 */    
+    font-size: 110%;/* 字大小 */
+}
+.d2v_world{
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    letter-spacing: 10px;/* 字距 */
 }
