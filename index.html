@@ -1,15 +1,88 @@
 <!DOCTYPE html>
+<!-- 矮額你怎麼在偷看 -->
 <html lang="zh-TW">
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <!-- text -->
         <div class="d1v">
-            <h1 class="d1v_world">嗨!我是張育睿</h1> 
+            <h1 class="d1v_world">Hi!我是張育睿</h1> 
         </div>
         <div class="d2v">
             <h1 class="d2v_world">這是我的個人網站</h1>
         </div>
+        <!-- button -->
+        <div class="button1" id="btn1">
+            <h1 class="button1_world">社群</h1>
+        </div>
+        <div class="button2" id="btn2">
+            <h1 class="button2_world">關於我</h1>
+        </div>
+        <div class="button3" id="btn3">
+            <h1 class="button3_world">網站記錄</h1>
+        </div>
+        <!-- windows -->
+        <div class="windows1" id="windows_1">
+            <h1 class="windows1_text" id="windows_1_text">社群</h1>
+            <div class="windows1_close" id="windows_1_close"></div>
+        </div>
+        <div class="windows2" id="windows_2">
+            <h1 class="windows2_text" id="windows_2_text">關於我</h1>
+            <div class="windows2_close" id="windows_2_close"></div>
+        </div>
+        <div class="windows3" id="windows_3">
+            <h1 class="windows3_text" id="windows_3_text">網站記錄</h1>
+            <div class="windows3_close" id="windows_3_close"></div>
+        </div>
     </body>
+
+    <script>
+        /* 1 */
+        const btn1 = document.getElementById("btn1");
+        const windows_1 = document.getElementById("windows_1");
+        const windows_1_close = document.getElementById("windows_1_close");
+        const windows_1_text = document.getElementById("windows_1_text");
+        btn1.onclick = function() {
+            windows_1.style.display = "block";
+            windows_1_close.style.display = "block";
+            windows_1_text.style.display = "block";
+        }
+        windows_1_close.onclick = function() {
+            windows_1.style.display = "none";
+            windows_1_close.style.display = "none";
+            windows_1_text.style.display= "none";
+        }
+        /* 2 */
+        const btn2 = document.getElementById("btn2");
+        const windows_2 = document.getElementById("windows_2");
+        const windows_2_close = document.getElementById("windows_2_close");
+        const windows_2_text = document.getElementById("windows_2_text");
+        btn2.onclick = function() {
+            windows_2.style.display = "block";
+            windows_2_close.style.display = "block";
+            windows_2_text.style.display = "block";
+        }
+        windows_2_close.onclick = function() {
+            windows_2.style.display = "none";
+            windows_2_close.style.display = "none";
+            windows_1_text.style.display= "none";
+        }
+        /* 3 */
+        const btn3 = document.getElementById("btn3");
+        const windows_3 = document.getElementById("windows_3");
+        const windows_3_close = document.getElementById("windows_3_close");
+        const windows_3_text = document.getElementById("windows_3_text");
+        btn3.onclick = function() {
+            windows_3.style.display = "block";
+            windows_3_close.style.display = "block";
+            windows_3_text.style.display = "block";
+        }
+        windows_3_close.onclick = function() {
+            windows_3.style.display = "none";
+            windows_3_close.style.display = "none";
+            windows_1_text.style.display= "none";
+        }
+    </script>
 </html>

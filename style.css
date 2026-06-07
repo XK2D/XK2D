@@ -26,7 +26,7 @@ body {
     left: 50%;/* 置中 */
     transform: translate(-50%,-100%);/* 調位置 */
     top: 50%;/* 往下 */    
-    font-size: 250%;/* 字大小 */
+    font-size: 280%;/* 字大小 */
 }
 .d1v_world{
     color: aliceblue;
@@ -49,4 +49,159 @@ body {
     color: aliceblue;
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
     letter-spacing: 10px;/* 字距 */
+}
+.button1{
+    position: absolute;
+    height: 60px;/* 高 */
+    width: 150px;/* 寬 */
+    display: flex;
+    justify-content: center;/* 文字置中 */
+    align-items: center;/* 文字置中 */
+    font-size: 150%;/* 字大小 */
+    left: 50%;/* 置中 */
+    top: 50%;/* 往下 */  
+    transform: translate(-335px,190%);/* 調位置 */
+    border: 5px solid white;/* 邊框 */
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */;
+    cursor: pointer;/* 手指頭 */
+}
+.button1_world{
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    letter-spacing: 2px;/* 字距 */
+}
+.button1:hover{
+    border: 5px solid rgb(255, 62, 62);/* 邊框 */
+}
+
+.button2{
+    position: absolute;
+    height: 60px;/* 高 */
+    width: 200px;/* 寬 */
+    display: flex;
+    justify-content: center;/* 文字置中 */
+    align-items: center;/* 文字置中 */
+    font-size: 150%;/* 字大小 */
+    left: 50%;/* 置中 */
+    top: 50%;/* 往下 */  
+    transform: translate(-165px,190%);/* 調位置 */
+    border: 5px solid white;/* 邊框 */
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */;
+    cursor: pointer;/* 手指頭 */
+}
+.button2_world{
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    letter-spacing: 2px;/* 字距 */
+}
+.button2:hover{
+    border: 5px solid rgb(255, 62, 62);/* 邊框 */
+}
+
+.button3{
+    position: absolute;
+    height: 60px;/* 高 */
+    width: 260px;/* 寬 */
+    display: flex;
+    justify-content: center;/* 文字置中 */
+    align-items: center;/* 文字置中 */
+    font-size: 150%;/* 字大小 */
+    left: 50%;/* 置中 */
+    top: 50%;/* 往下 */  
+    transform: translate(55px,190%);/* 調位置 */
+    border: 5px solid white;/* 邊框 */
+    box-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */;
+    cursor: pointer;/* 手指頭 */
+}
+.button3_world{
+    color: aliceblue;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    letter-spacing: 2px;/* 字距 */
+}
+.button3:hover{
+    border: 5px solid rgb(255, 62, 62);/* 邊框 */
+}
+.windows1{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:600px;/* 高 */
+    width:1000px;/* 寬 */
+    background-image: url(images/page_window.png);
+}
+.windows1_close{
+    height:55px;/* 高 */
+    width:55px; /* 寬 */
+    display: none;
+    position: absolute;
+    top: 0%;
+    left:100%;
+    transform: translateX(-100%);
+    cursor: pointer;/* 手指頭 */
+}
+.windows1_text{
+    display: none;
+    top: 0%;
+    left: 0%;
+    color: rgba(255, 255, 255, 0.809);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    transform: translate(10px,10px);
+}
+.windows2{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:600px;/* 高 */
+    width:1000px;/* 寬 */
+    background-image: url(images/page_window.png);
+}
+.windows2_close{
+    height:55px;/* 高 */
+    width:55px; /* 寬 */
+    display: none;
+    position: absolute;
+    top: 0%;
+    left:100%;
+    transform: translateX(-100%);
+    cursor: pointer;/* 手指頭 */
+}
+.windows2_text{
+    display: none;
+    top: 0%;
+    left: 0%;
+    color: rgba(255, 255, 255, 0.809);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
+    transform: translate(10px,10px);
+}
+.windows3{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:600px;/* 高 */
+    width:1000px;/* 寬 */
+    background-image: url(images/page_window.png);
+}
+.windows3_close{
+    height:55px;/* 高 */
+    width:55px; /* 寬 */
+    display: none;
+    position: absolute;
+    top: 0%;
+    left:100%;
+    transform: translateX(-100%);
+    cursor: pointer;/* 手指頭 */
+}
+.windows3_text{
+    display: none;
+    top: 0%;
+    left: 0%;
+    transform: translate(10px,10px);
+    color: rgba(255, 255, 255, 0.809);
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
 }
