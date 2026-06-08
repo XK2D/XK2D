@@ -21,19 +21,30 @@
             <h1 class="button2_world">關於我</h1>
         </div>
         <div class="button3" id="btn3">
-            <h1 class="button3_world">網站記錄</h1>
+            <h1 class="button3_world">我的專案</h1>
         </div>
         <!-- windows -->
         <div class="windows1" id="windows_1">
             <h1 class="windows1_text" id="windows_1_text">社群</h1>
+            <h1 class="windows1_ig_text">我的IG   ray_.1208</h1>
+            <img src="images/ig_logo.png" class="windows1_ig_image">
+            <h1 class="windows1_githib_text">我的GitHub   XKKDD</h1>
+            <img src="images/github_logo.png" class="windows1_github_image">
             <div class="windows1_close" id="windows_1_close"></div>
         </div>
         <div class="windows2" id="windows_2">
             <h1 class="windows2_text" id="windows_2_text">關於我</h1>
+            <h1 class="windows2_text1">我是新莊一中的學生,玩了10年minecraft,目前正在學程式。(剩下之後再寫)<br>
+                                       <br>特殊經歷:<br>
+                                       曾經連續多屆北區扯鈴比賽乙類特優<br>
+                                       甲類第四名<br>
+                                       在全國體操比賽某個很水的獎項全國第一<br>
+            </h1>
             <div class="windows2_close" id="windows_2_close"></div>
         </div>
         <div class="windows3" id="windows_3">
-            <h1 class="windows3_text" id="windows_3_text">網站記錄</h1>
+            <h1 class="windows3_text" id="windows_3_text">我的專案</h1>
+            <h1 class="windows3_text1">我沒有專案:(</h1>
             <div class="windows3_close" id="windows_3_close"></div>
         </div>
     </body>
@@ -43,46 +54,37 @@
         const btn1 = document.getElementById("btn1");
         const windows_1 = document.getElementById("windows_1");
         const windows_1_close = document.getElementById("windows_1_close");
-        const windows_1_text = document.getElementById("windows_1_text");
         btn1.onclick = function() {
             windows_1.style.display = "block";
             windows_1_close.style.display = "block";
-            windows_1_text.style.display = "block";
         }
         windows_1_close.onclick = function() {
             windows_1.style.display = "none";
             windows_1_close.style.display = "none";
-            windows_1_text.style.display= "none";
         }
         /* 2 */
         const btn2 = document.getElementById("btn2");
         const windows_2 = document.getElementById("windows_2");
         const windows_2_close = document.getElementById("windows_2_close");
-        const windows_2_text = document.getElementById("windows_2_text");
         btn2.onclick = function() {
             windows_2.style.display = "block";
             windows_2_close.style.display = "block";
-            windows_2_text.style.display = "block";
         }
         windows_2_close.onclick = function() {
             windows_2.style.display = "none";
             windows_2_close.style.display = "none";
-            windows_1_text.style.display= "none";
         }
         /* 3 */
         const btn3 = document.getElementById("btn3");
         const windows_3 = document.getElementById("windows_3");
         const windows_3_close = document.getElementById("windows_3_close");
-        const windows_3_text = document.getElementById("windows_3_text");
         btn3.onclick = function() {
             windows_3.style.display = "block";
             windows_3_close.style.display = "block";
-            windows_3_text.style.display = "block";
         }
         windows_3_close.onclick = function() {
             windows_3.style.display = "none";
             windows_3_close.style.display = "none";
-            windows_1_text.style.display= "none";
         }
     </script>
 </html>
