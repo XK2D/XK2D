@@ -55,36 +55,48 @@
         const windows_1 = document.getElementById("windows_1");
         const windows_1_close = document.getElementById("windows_1_close");
         btn1.onclick = function() {
+            windows_1.style.animation = "open 0.3s ease-in-out forwards";
             windows_1.style.display = "block";
             windows_1_close.style.display = "block";
         }
         windows_1_close.onclick = function() {
-            windows_1.style.display = "none";
-            windows_1_close.style.display = "none";
+            windows_1.style.animation = "close 0.2s ease-in-out forwards";
+            setTimeout(function() {
+                windows_1.style.display = "none";
+                windows_1_close.style.display = "none";
+            }, 300);           
         }
         /* 2 */
         const btn2 = document.getElementById("btn2");
         const windows_2 = document.getElementById("windows_2");
         const windows_2_close = document.getElementById("windows_2_close");
         btn2.onclick = function() {
+            windows_2.style.animation = "open 0.3s ease-in-out forwards";
             windows_2.style.display = "block";
             windows_2_close.style.display = "block";
         }
         windows_2_close.onclick = function() {
-            windows_2.style.display = "none";
-            windows_2_close.style.display = "none";
+            windows_2.style.animation = "close 0.2s ease-in-out forwards";
+            setTimeout(function() {
+                windows_2.style.display = "none";
+                windows_2_close.style.display = "none";
+            }, 300);
         }
         /* 3 */
         const btn3 = document.getElementById("btn3");
         const windows_3 = document.getElementById("windows_3");
         const windows_3_close = document.getElementById("windows_3_close");
         btn3.onclick = function() {
+            windows_3.style.animation = "open 0.3s ease-in-out forwards";
             windows_3.style.display = "block";
             windows_3_close.style.display = "block";
         }
         windows_3_close.onclick = function() {
-            windows_3.style.display = "none";
-            windows_3_close.style.display = "none";
+            windows_3.style.animation = "close 0.2s ease-in-out forwards";
+            setTimeout(function() {
+                windows_3.style.display = "none";
+                windows_3_close.style.display = "none";
+            }, 300);
         }
     </script>
 </html>

@@ -132,14 +132,18 @@ body {
     background-image: url(images/page_window.png);
 }
 .windows1_close{
-    height:55px;/* 高 */
-    width:55px; /* 寬 */
+    height:58px;/* 高 */
+    width:62px; /* 寬 */
     display: none;
     position: absolute;
     top: 0%;
     left:100%;
     transform: translateX(-100%);
     cursor: pointer;/* 手指頭 */
+}
+.windows1_close:hover{
+    border: 6px solid rgb(243, 112, 112);
+    box-sizing: border-box;
 }
 .windows1_text{
     top: 0%;
@@ -187,14 +191,18 @@ body {
     background-image: url(images/page_window.png);
 }
 .windows2_close{
-    height:55px;/* 高 */
-    width:55px; /* 寬 */
+    height:58px;/* 高 */
+    width:62px; /* 寬 */
     display: none;
     position: absolute;
     top: 0%;
     left:100%;
     transform: translateX(-100%);
     cursor: pointer;/* 手指頭 */
+}
+.windows2_close:hover{
+    border: 6px solid rgb(243, 112, 112);
+    box-sizing: border-box;
 }
 .windows2_text{
     top: 0%;
@@ -223,14 +231,18 @@ body {
     background-image: url(images/page_window.png);
 }
 .windows3_close{
-    height:55px;/* 高 */
-    width:55px; /* 寬 */
+    height:58px;/* 高 */
+    width:62px; /* 寬 */
     display: none;
     position: absolute;
     top: 0%;
     left:100%;
     transform: translateX(-100%);
     cursor: pointer;/* 手指頭 */
+}
+.windows3_close:hover{
+    border: 6px solid rgb(243, 112, 112);
+    box-sizing: border-box;
 }
 .windows3_text{
     top: 0%;
@@ -246,4 +258,31 @@ body {
     color: rgba(255, 255, 255, 0.809);
     text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.5);/* 加亮亮 */
     font-size: 300%;
+}
+@keyframes open {/* ai寫的 */
+    0% {
+        transform: translate(-50%, -50%) scaleY(0.01) scaleX(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-50%, -50%) scaleY(0.01) scaleX(1); 
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scaleY(1) scaleX(1); 
+    }
+}
+@keyframes close {
+    0% {
+        transform: translate(-50%, -50%) scaleY(1) scaleX(1);
+        opacity: 1;
+    }
+    50% {
+        transform: translate(-50%, -50%) scaleY(0.01) scaleX(1); /* 先垂直壓扁成一條線 */
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -50%) scaleY(0) scaleX(0);    /* 最後縮成一個點不見 */
+        opacity: 0;
+    }
 }
